@@ -1,0 +1,88 @@
+/* These are CSS Variables. If you want to change the color scheme, try a different hue between 0 and 270. The colors in the CSS will automatically update. */
+:root {
+  --hue: 200;
+  --choice-hue: 80;
+  background-color: lightgray;
+}
+body {
+  color: hsl(var(--hue), 85%, 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Georgia, serif;
+}
+h1,
+h2 {
+  color: hsl(var(--hue), 85%, 40%);
+  font-family: Futura, Helvetica, sans-serif;
+  margin-top: 4rem;
+  text-transform: uppercase;
+}
+
+/* added mystery doggo image */
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+button {
+  background-color: hsl(var(--hue), 80%, 50%);
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 20px;
+  text-transform: uppercase;
+}
+button:hover {
+  background-color: hsl(var(--hue), 80%, 53%);
+}
+ul {
+  margin-top: 0;
+  padding: 0;
+}
+ul li {
+  background-color: hsl(var(--hue), 80%, 90%);
+  list-style: none;
+  margin: 8px;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.choice {
+  background-color: hsl(var(--choice-hue), 80%, 90%);
+  color: hsl(var(--choice-hue), 80%, 20%);
+  position: relative;
+}
+.choice:before {
+  content: "👉";
+  position: absolute;
+  left: -17px;
+  top: 3px;
+  font-size: 32px;
+}
+
+a {
+  color: hsl(var(--hue), 80%, 48%);
+  border-bottom: 1px solid var(--pink-10);
+  box-shadow: hsl(var(--hue), 80%, 90%) 0 -2px 0 0 inset;
+  text-decoration: none;
+}
+a:hover {
+  background-color: hsl(var(--hue), 80%, 92%);
+  color: hsl(var(--hue), 80%, 50%);
+  text-decoration: none;
+}
+
+/* this is for #5
+.highlighted {
+  background-color: yellow;
+}
+*/
+
+.choice {
+  background-color: lightgreen;
